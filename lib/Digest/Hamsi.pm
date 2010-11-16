@@ -75,8 +75,8 @@ Digest::Hamsi - Perl interface to the Hamsi digest algorithm
     use Digest::Hamsi qw(hamsi_256 hamsi_256_hex hamsi_256_base64);
 
     $digest = hamsi_256($data);
-    $digest = hamsi_hex_256($data);
-    $digest = hamsi_base64_256($data);
+    $digest = hamsi_256_hex($data);
+    $digest = hamsi_256_base64($data);
 
     # Object-oriented interface
     use Digest::Hamsi;
