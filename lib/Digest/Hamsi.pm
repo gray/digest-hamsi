@@ -25,33 +25,6 @@ our @EXPORT_OK = qw(
     hamsi_512 hamsi_512_hex hamsi_512_base64
 );
 
-# TODO: convert to C.
-sub hamsi_224_hex  { unpack 'H*', hamsi_224(@_) }
-sub hamsi_256_hex  { unpack 'H*', hamsi_256(@_) }
-sub hamsi_384_hex  { unpack 'H*', hamsi_384(@_) }
-sub hamsi_512_hex  { unpack 'H*', hamsi_512(@_) }
-
-sub hamsi_224_base64 {
-    my $b64 = MIME::Base64::encode(hamsi_224(@_), '');
-    $b64 =~ s/=+$//g;
-    return $b64;
-}
-sub hamsi_256_base64 {
-    my $b64 = MIME::Base64::encode(hamsi_256(@_), '');
-    $b64 =~ s/=+$//g;
-    return $b64;
-}
-sub hamsi_384_base64 {
-    my $b64 = MIME::Base64::encode(hamsi_384(@_), '');
-    $b64 =~ s/=+$//g;
-    return $b64;
-}
-sub hamsi_512_base64 {
-    my $b64 = MIME::Base64::encode(hamsi_512(@_), '');
-    $b64 =~ s/=+$//g;
-    return $b64;
-}
-
 sub add_bits {
     my ($self, $data, $bits) = @_;
     if (2 == @_) {
