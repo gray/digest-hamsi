@@ -64,7 +64,8 @@ Digest::Hamsi - Perl interface to the Hamsi digest algorithm
 =head1 DESCRIPTION
 
 The C<Digest::Hamsi> module provides an interface to the Hamsi message
-digest algorithm. Hamsi is a candidate in the NIST SHA-3 competition.
+digest algorithm. Hamsi was a candidate in the NIST SHA-3 competition but
+did progress beyond round 2.
 
 This interface follows the conventions set forth by the C<Digest> module.
 
