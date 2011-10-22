@@ -3,6 +3,8 @@ Hamsi.bs
 Hamsi.c
 Hamsi.o
 MANIFEST.bak
+MYMETA.json
+MYMETA.yml
 Makefile
 Makefile.old
 blib/
